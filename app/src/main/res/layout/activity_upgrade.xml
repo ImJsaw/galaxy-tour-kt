@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.game.bing.starwar.UpgradeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/leftArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/colorControlHighlight"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/arrow_left" />
+
+            <ImageView
+                android:id="@+id/plane"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/plane_ori" />
+
+            <ImageButton
+                android:id="@+id/rightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/restPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/AtkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="攻擊"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/atkMinus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/atkValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/atkPlus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000"
+
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/BloodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="生命"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/bloodMinus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/bloodValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/bloodPlus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000"
+
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/spdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="攻速"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/spdMinus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/spdValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/spdPlus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000"
+
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="確認" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000">
+
+        <Button
+            android:id="@+id/start_game"
+            style="@android:style/Widget.Material.Light.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="開始遊戲" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Galaxy Tour</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="help">說明</string>
+    <string name="aboutContent">
+        開發者:陳梓賓\n
+        email:bing5300@gmail.com\n
+        </string>
+    <string name="aboutContent2">美術顧問:羅羅老師  野生軍艦</string>
+    <string name="gameStart">遊戲開始</string>
+    <string name="option">選項</string>
+    <string name="about">關於</string>
+    <string name="confirm">確認</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helpView"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    android:background="@drawable/board2"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:background="@drawable/shape_round_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/characterName"
+                android:drawableTop="@drawable/ammo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/helpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/helpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#1fc70c"
+                android:typeface="normal" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
